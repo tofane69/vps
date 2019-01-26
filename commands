@@ -1,0 +1,9 @@
+yum install -y git nano
+cd /opt && git clone git://github.com/drewsymo/VPN.git
+cd VPN && bash vpn-setup-vanilla.sh
+nano /etc/ppp/chap-secrets
+
+yum install python
+wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+chmod +x speedtest-cli
+./speedtest-cli
